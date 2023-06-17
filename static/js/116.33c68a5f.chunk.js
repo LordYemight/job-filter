@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkreact_tutorial=self.webpackChunkreact_tutorial||[]).push([[116],{116:function(t,e,s){t.exports=s.p+"static/media/shortly.3c01b577742e2648f6f9.svg"}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkreact_tutorial=self.webpackChunkreact_tutorial||[]).push([[128],{128:function(e,t,s){e.exports=s.p+"static/media/insure.4d535e7e02c25d02b163.svg"}}]);

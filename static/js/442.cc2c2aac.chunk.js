@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkreact_tutorial=self.webpackChunkreact_tutorial||[]).push([[442],{442:function(t,e,a){t.exports=a.p+"static/media/bg-header-desktop.752d0faf14c00c6fb55f.svg"}}]);

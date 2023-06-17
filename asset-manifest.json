@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/job-filter/static/css/main.15efc72f.css",
+    "main.js": "/job-filter/static/js/main.d305e553.js",
+    "static/js/798.517c8574.chunk.js": "/job-filter/static/js/798.517c8574.chunk.js",
+    "static/js/442.cc2c2aac.chunk.js": "/job-filter/static/js/442.cc2c2aac.chunk.js",
+    "static/js/669.408f1aaf.chunk.js": "/job-filter/static/js/669.408f1aaf.chunk.js",
+    "static/js/413.2d333792.chunk.js": "/job-filter/static/js/413.2d333792.chunk.js",
+    "static/js/694.d35d5848.chunk.js": "/job-filter/static/js/694.d35d5848.chunk.js",
+    "static/js/585.7dba4cc4.chunk.js": "/job-filter/static/js/585.7dba4cc4.chunk.js",
+    "static/js/501.5263e955.chunk.js": "/job-filter/static/js/501.5263e955.chunk.js",
+    "static/js/128.5ba0033a.chunk.js": "/job-filter/static/js/128.5ba0033a.chunk.js",
+    "static/js/997.6d943741.chunk.js": "/job-filter/static/js/997.6d943741.chunk.js",
+    "static/js/212.fe9ed312.chunk.js": "/job-filter/static/js/212.fe9ed312.chunk.js",
+    "static/js/310.5ee2d4e1.chunk.js": "/job-filter/static/js/310.5ee2d4e1.chunk.js",
+    "static/js/604.931f7045.chunk.js": "/job-filter/static/js/604.931f7045.chunk.js",
+    "static/js/116.33c68a5f.chunk.js": "/job-filter/static/js/116.33c68a5f.chunk.js",
+    "static/js/403.4192bd37.chunk.js": "/job-filter/static/js/403.4192bd37.chunk.js",
+    "static/media/loop-studios.svg": "/job-filter/static/media/loop-studios.7778c957c5751d1502cc.svg",
+    "static/media/photosnap.svg": "/job-filter/static/media/photosnap.5a867c13a374d62b400f.svg",
+    "static/media/manage.svg": "/job-filter/static/media/manage.5a528a9669728fb94c8c.svg",
+    "static/media/insure.svg": "/job-filter/static/media/insure.4d535e7e02c25d02b163.svg",
+    "static/media/account.svg": "/job-filter/static/media/account.903d6cd02abadf4b4d60.svg",
+    "static/media/eyecam-co.svg": "/job-filter/static/media/eyecam-co.0abb14e8a292eed471d5.svg",
+    "static/media/shortly.svg": "/job-filter/static/media/shortly.3c01b577742e2648f6f9.svg",
+    "static/media/myhome.svg": "/job-filter/static/media/myhome.aaaaa430346f24f652d5.svg",
+    "static/media/the-air-filter-company.svg": "/job-filter/static/media/the-air-filter-company.9b55f6443c39f7b79348.svg",
+    "static/media/bg-header-desktop.svg": "/job-filter/static/media/bg-header-desktop.752d0faf14c00c6fb55f.svg",
+    "static/media/faceit.svg": "/job-filter/static/media/faceit.54a148ce9e8793ff767e.svg",
+    "index.html": "/job-filter/index.html",
+    "static/media/bg-header-mobile.svg": "/job-filter/static/media/bg-header-mobile.b7750a0c3e0c016763b9.svg",
+    "static/media/icon-remove.svg": "/job-filter/static/media/icon-remove.70c075ce001e5ccae7c68a570c4b7bc0.svg",
+    "main.15efc72f.css.map": "/job-filter/static/css/main.15efc72f.css.map",
+    "main.d305e553.js.map": "/job-filter/static/js/main.d305e553.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.15efc72f.css",
+    "static/js/main.d305e553.js"
+  ]
+}

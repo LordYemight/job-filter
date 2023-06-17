@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkreact_tutorial=self.webpackChunkreact_tutorial||[]).push([[694],{694:function(e,t,a){e.exports=a.p+"static/media/faceit.54a148ce9e8793ff767e.svg"}}]);

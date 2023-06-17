@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkreact_tutorial=self.webpackChunkreact_tutorial||[]).push([[798],{798:function(t,a,c){t.exports=c.p+"static/media/account.903d6cd02abadf4b4d60.svg"}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkreact_tutorial=self.webpackChunkreact_tutorial||[]).push([[501],{501:function(e,c,t){e.exports=t.p+"static/media/icon-remove.70c075ce001e5ccae7c6.svg"}}]);
