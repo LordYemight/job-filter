@@ -1,0 +1,138 @@
+.job-container{
+  width: 75%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  border-radius: 5px;
+  margin: 1rem 0;
+  box-shadow: 0 5px 20px hsl(180, 5%, 69%);
+
+  @media only screen and (max-width: 375px) {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80vw;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  padding-right: 1.5rem;
+
+  @media only screen and (max-width: 375px) {
+    position: absolute;
+    top: -2rem;
+    img {
+      width: 4rem;
+      height: auto;
+    }
+  }  
+}
+
+.part1{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 0.5rem;
+
+  @media only screen and (max-width: 375px) {
+    flex-grow: 0;
+    padding: 1.3rem 0;
+  }
+}
+
+.new_feature{
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+ 
+}
+
+.company{
+  color: hsl(180, 29%, 50%);
+  margin-right: 5px;
+  font-weight: 500;
+  
+  
+}
+
+.position{
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.position:hover{
+  color: hsl(180, 29%, 50%);
+}
+
+.new{
+  background-color: hsl(180, 29%, 50%);
+  border-radius: 10px;
+  width: 3.5em;
+  text-align: center;
+  font-size: smaller;
+  padding-top: 0.15rem;
+  margin-top: 0.1rem;
+  color: white;
+  font-weight: 500;
+}
+
+.featured{
+  background-color: hsl(0, 0%, 0%);
+  border-radius: 10px;
+  width: 5.5em;
+  text-align: center;
+  font-size: smaller;
+  margin-top: 0.1rem;
+  padding-top: 0.15rem;
+  color: white;
+  margin-right: 5px;
+  font-weight: 500;
+}
+
+.detail{
+  display: flex;
+  margin-top: 0;
+  margin-left: -40px;
+  justify-content: space-between;
+  width: 220px; 
+}
+
+.ago{
+  color: hsl(180, 8%, 52%);
+  
+}
+
+li{
+  color: hsl(180, 8%, 52%);
+}
+
+
+
+.part2{
+  
+  margin-left: 10px;
+  @media only screen and (max-width: 375px) {
+    margin-bottom: 1rem;
+  }
+
+  &--borderLeft{
+    border-left: 5px solid hsl(180, 29%, 50%);
+  }
+}
+
+.btn{
+  color: hsl(180, 29%, 50%);
+  background-color: hsl(180, 52%, 96%);
+  border-style: none;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: hsl(180, 29%, 50%);
+  color: white;
+}
