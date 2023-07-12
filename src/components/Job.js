@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const Job = (props) => {
+const Job = ({ data, setKeywords }) => {
   const {
     company,
     contract,
@@ -14,60 +14,55 @@ const Job = (props) => {
     postedAt,
     role,
     tools
-  } = props.data;
+  } = data;
 
-  let keywords = [role, level, ...languages,...tools]
+  const keywords = [role, level, ...languages, ...tools];
 
   const [icon, setIcon] = useState("");
-  const importSvgs = () => {
-    const logoSvg = import(`${logo}`).then((d) => {
-      console.log(d)
-      setIcon(d.default);
-    })
-  }
 
-  useEffect (() =>{
-    importSvgs();
-  }, [logo, importSvgs])
-
+  useEffect(() => {
+    const importSvg = async () => {
+      const { default: svg } = await import(`${logo}`);
+      setIcon(svg);
+    };
+    importSvg();
+  }, [logo]);
 
   return (
-    <div className={featured ? "job-container job-container--borderLeft" : "job-container"}>
+    <div className={`job-container ${featured && "job-container--borderLeft"}`}>
       <div className="logo">
-        <img src={icon} alt=""/>
+        <img className="icon" src={icon} alt="" />
       </div>
       <div className="part1">
         <div className="new_feature">
           <div className="company">{company}</div>
-          {props.data.new && <span className="new">NEW!</span>}
-          {props.data.featured && <span className="featured">FEATURED</span>}
+          {data.new && <span className="new">NEW!</span>}
+          {data.featured && <span className="featured">FEATURED</span>}
         </div>
         <div className="position">{position}</div>
         <div className="details">
-         <ul className="detail">
-     
-          <span className="ago">{postedAt}</span>
-      
-          <li>
-          <span className="ago">{contract}</span>
-          </li>
-          <li>
-          <span className="ago">{location}</span>
-          </li>
-         </ul>
+          <ul className="detail">
+            <li>
+              <span className="ago">{postedAt}</span>
+            </li>
+            <li>
+              <span className="ago">{contract}</span>
+            </li>
+            <li>
+              <span className="ago">{location}</span>
+            </li>
+          </ul>
         </div>
       </div>
       <div className="part2">
-        {keywords.map((key, id) => (
-          <button className="btn" onClick={() => props.setKeywords(key)} key={id}>
-            {key}
+        {keywords.map((keyword, id) => (
+          <button className="btn" onClick={() => setKeywords(keyword)} key={id}>
+            {keyword}
           </button>
-          ))
-        }
-
+        ))}
       </div>
     </div>
-  )
-} 
+  );
+};
 
 export default Job;

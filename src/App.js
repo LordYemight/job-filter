@@ -25,7 +25,9 @@ function App() {
   return (
     <div>
       <div className="header"></div>
-      {filterKeywords.length > 0 && <Header keywords = {filterKeywords} removeKeywords = {deleteKeyword} clearAll = {clearAll} />}
+      {filterKeywords.length > 0 && 
+      
+      <Header keywords = {filterKeywords} removeKeywords = {deleteKeyword} clearAll = {clearAll} />}
 
       <Jobs keywords = {filterKeywords} data = {data} setKeywords = {addFilterKeywords}/>
     </div>

@@ -22,14 +22,17 @@
   align-items: center;
   padding-right: 1.5rem;
 
-  @media only screen and (max-width: 375px) {
+  @media only screen and (max-width: 767px) {
+    display: flex;
     position: absolute;
-    top: -2rem;
-    img {
-      width: 4rem;
-      height: auto;
-    }
+    height: 0px;
+    align-items: center;
+    padding-right: 1.5rem;
+  
+
+
   }  
+
 }
 
 .part1{
@@ -38,7 +41,7 @@
   flex-grow: 1;
   gap: 0.5rem;
 
-  @media only screen and (max-width: 375px) {
+  @media only screen and (max-width: 767px) {
     flex-grow: 0;
     padding: 1.3rem 0;
   }
@@ -115,7 +118,7 @@ li{
 .part2{
   
   margin-left: 10px;
-  @media only screen and (max-width: 375px) {
+  @media only screen and (max-width: 767px) {
     margin-bottom: 1rem;
   }
 
@@ -135,4 +138,19 @@ li{
 .btn:hover {
   background-color: hsl(180, 29%, 50%);
   color: white;
+}
+
+@media only screen and (max-width: 767px) {
+  .detail {
+    width: 170px;
+  }
+  .part2{
+    margin-left: -2px;
+  }
+  .icon{
+    width: 50px;
+    position: relative;
+    margin-top: -40px;
+
+  }
 }
