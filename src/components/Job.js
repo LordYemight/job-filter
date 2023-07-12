@@ -42,9 +42,9 @@ const Job = ({ data, setKeywords }) => {
         <div className="position">{position}</div>
         <div className="details">
           <ul className="detail">
-            <li>
-              <span className="ago">{postedAt}</span>
-            </li>
+            <div>
+              <span className="agos">{postedAt}</span>
+            </div>
             <li>
               <span className="ago">{contract}</span>
             </li>

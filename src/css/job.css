@@ -111,9 +111,12 @@
 
 li{
   color: hsl(180, 8%, 52%);
+
 }
 
-
+.agos{
+  color: hsl(180, 8%, 52%);
+}
 
 .part2{
   
@@ -121,11 +124,15 @@ li{
   @media only screen and (max-width: 375px) {
     margin-bottom: 1rem;
   }
+}
 
-  &--borderLeft{
-    border-left: 5px solid hsl(180, 29%, 50%);
+.job-container--borderLeft {
+  border-left: 4px solid hsl(180, 29%, 50%);
+  @media only screen and (max-width: 375px){
+    border-left: 4px solid hsl(180, 29%, 50%);
   }
 }
+
 
 .btn{
   color: hsl(180, 29%, 50%);
