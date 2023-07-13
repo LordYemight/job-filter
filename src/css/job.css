@@ -41,7 +41,7 @@
   flex-grow: 1;
   gap: 0.5rem;
 
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: 375px) {
     flex-grow: 0;
     padding: 1.3rem 0;
   }
