@@ -1,35 +1,33 @@
-The `App` component is the top-level component that serves as the entry point of the application. It imports the necessary components: `data` from the JSON file, `Jobs`, and `Header`.
+# Job Listing Application in React
 
-Inside the `App` component, there is a state variable called `filterKeywords` which is managed using the `useState` hook. It stores the selected keywords for filtering the job listings.
+This job listing application in React employs various components to manage and display job listings with customizable filtering options.
 
-The `addFilterKeywords` function is defined, which is passed as a prop to the `Jobs` component. This function takes a keyword as input and adds it to the `filterKeywords` state if it is not already included.
+## How It Works
 
-The `deleteKeyword` function is also defined, which removes a keyword from the `filterKeywords` state. It filters out the selected keyword from the current state and updates the state accordingly.
+- **App Component:** The top-level component manages the state of selected keywords for filtering job listings. It imports and renders the `Jobs` and `Header` components, controlling their interactions and states.
 
-The `clearAll` function is responsible for clearing all the selected keywords. It sets the `filterKeywords` state to an empty array, effectively removing all the applied filters.
+- **Header Component:** Renders selected keywords, providing the option to remove individual keywords or clear all selected keywords.
 
-In the rendering part, the `Header` component is conditionally displayed only if there are selected keywords. It receives the `filterKeywords` state, the `deleteKeyword` function, and the `clearAll` function as props.
+- **Jobs Component:** Filters and displays job listings based on the selected keywords, showcasing the `Job` component for individual job listing details.
 
-The `Jobs` component is also rendered and receives the `filterKeywords`, `data`, and `addFilterKeywords` function as props.
+- **Job Component:** Represents an individual job listing, displaying company details, job position, and other relevant information. Users can filter jobs by clicking on specific keywords.
 
-Inside the `Jobs` component, there is a state variable called `filteredData` which stores the filtered job listings based on the selected keywords. It is managed using the `useState` hook.
+- **Filter Functionality:** Users can add keywords to the filtering list, which dynamically filters job listings based on the selected keywords.
 
-The `modifiedData` function is defined, which is responsible for filtering the job listings based on the selected keywords. If there are selected keywords, it filters the `data` array using the `filter` function and the `every` method. The `every` method checks if every keyword matches the job role, level, languages, or tools of a job listing. The filtered data is then stored in the `filteredData` state.
+- **Dynamic SVG Import:** The application utilizes the `useState` and `useEffect` hooks to handle the dynamic import of job logos as SVGs, enhancing the visual representation of job listings.
 
-The `useEffect` hook is used to call the `modifiedData` function whenever the `filterKeywords` state changes. This ensures that the job listings are filtered and updated whenever the selected keywords change.
+- **Responsiveness:** The design is responsive, ensuring seamless usage across different screen sizes and devices.
 
-In the rendering part of the `Jobs` component, the `filteredData` array is mapped over to render individual `Job` components. Each `Job` component receives a job object from the `filteredData` array as a prop. It also receives the `addFilterKeywords` function to handle keyword selection.
+## Getting Started
 
-The `Job` component represents a single job listing. It receives various job-related data as props, such as the company name, contract type, featured status, etc.
+To utilize this application:
 
-Inside the `Job` component, an array called `keywords` is created, which includes the job role, level, languages, and tools. This array is used to generate buttons representing each keyword.
+1. Clone this repository to your local machine.
 
-The `useState` and `useEffect` hooks are used to handle the dynamic importing of the job logo as an SVG. The `importSvgs` function is defined, which imports the SVG logo based on the provided logo URL and sets it as the `icon` state.
+2. Install the required dependencies by running `npm install` in your terminal.
 
-The component renders the job information, including the company name, job position, and other details. It also displays the job logo using the dynamically imported SVG icon.
+3. Start the development server by running `npm start` in your terminal.
 
-The `keywords` array is mapped over to generate buttons for each keyword. Clicking on a keyword button triggers the `addFilterKeywords` function (passed as a prop) and adds the corresponding keyword to the `filterKeywords` state.
+---
 
-In summary, the `App` component manages the selected keywords and renders the `Header` and `Jobs` components. The `Header` component displays the selected keywords and provides options to
-
- remove individual keywords or clear all selected keywords. The `Jobs` component filters and renders the job listings based on the selected keywords. The `Job` component represents an individual job listing and allows users to filter jobs by clicking on keywords. Together, these components provide a job listing application with filtering functionality.
+**Note**: Ensure that the `data.json` file is appropriately formatted to ensure accurate and seamless data representation within the application.

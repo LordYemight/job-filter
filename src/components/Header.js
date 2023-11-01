@@ -1,6 +1,6 @@
 import React from "react";
 import close from "./images/icon-remove.svg"
-
+import '../css/header.css'
 const Header = ({ keywords,removeKeywords, clearAll }) => {
   return (
     <div className="header-container">
@@ -15,7 +15,7 @@ const Header = ({ keywords,removeKeywords, clearAll }) => {
           </li> 
           )
         })}
-        <a href="#" onClick={() => clearAll()}>
+        <a href="/" onClick={() => clearAll()}>
           Clear
         </a>
         

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Job from "./Job";
+import '../css/job.css'
 
 const Jobs = ({ data, setKeywords, keywords }) => {
   const [filteredData, setFilteredData] = useState(data);
