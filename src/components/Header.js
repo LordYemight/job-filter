@@ -2,6 +2,11 @@ import React from "react";
 import close from "./images/icon-remove.svg"
 import '../css/header.css'
 const Header = ({ keywords,removeKeywords, clearAll }) => {
+  const handleClearClick = (e) => {
+    e.preventDefault(); // Prevent the default behavior (page refresh)
+    clearAll();
+  };
+
   return (
     <div className="header-container">
       <ul className="tabs">
@@ -15,7 +20,7 @@ const Header = ({ keywords,removeKeywords, clearAll }) => {
           </li> 
           )
         })}
-        <a href="/" onClick={() => clearAll()}>
+        <a href="/" onClick={handleClearClick}>
           Clear
         </a>
         
